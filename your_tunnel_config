@@ -1,0 +1,19 @@
+# Check connection every 10 seconds, and after 3 tries (30 seconds), drop and
+# let autossh re-connect.
+ServerAliveInterval="10"
+ServerAliveCountMax="3"
+StrictHostKeyChecking="no"
+
+LocalUser="root"
+IdentityFile="~/.ssh/id_rsa"
+
+RemoteUser="your_remote_user"
+RemoteHost="your_remote_host"
+RemotePort="22"
+
+# Array of ports to be forwarded:
+#
+#Forward port 636, listening on 127.0.0.1, to 10.100.1.60 port 636 on the remote side.
+ForwardPort=(
+    "L 127.0.0.1:636:10.100.1.60:636"
+)
