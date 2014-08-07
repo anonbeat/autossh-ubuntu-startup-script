@@ -1,5 +1,8 @@
 autossh-ubuntu-startup-script
 =============================
+This a modified version of a script found in http://surniaulula.com/ written by Jean-Sebastien Morisset.
+This version is just modified to work with ubuntu. All credit for this goes to Jean
+Here is how to use it:
 
 startup script for autossh:
 

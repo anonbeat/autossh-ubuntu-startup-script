@@ -1,14 +1,8 @@
 #!/bin/bash
-#
-# autossh . Startup script for autossh
-
-# chkconfig: 2345 25 40
 # description: Maintain persistent SSH tunnels
 # processname: autossh
 # pidfile: /var/run/autossh.pid
 
-# Copyright 2012 - Jean-Sebastien Morisset - http://surniaulula.com/
-#
 # http://surniaulula.com/2012/12/10/autossh-startup-script-for-multiple-tunnels/
 #
 # This script is free software; you can redistribute it and/or modify it under
@@ -20,12 +14,6 @@
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
 # details at http://www.gnu.org/licenses/.
-
-# Changelog:
-#
-# 2013/06/21 - Reset the $forward_list variable at the start() to prevent the
-# accumulation of ports for each config loop. Also added support for socks
-# proxies. Thanks to Chris for pointing out the issue in the comments.
 
 # Source function libraryi for ubuntu
 . /lib/lsb/init-functions
