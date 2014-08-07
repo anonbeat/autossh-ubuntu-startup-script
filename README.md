@@ -15,10 +15,10 @@ startup script for autossh:
 Usage: /etc/init.d/autosshtunnnel {start|stop|restart|status} {config names...}
 
 ####start
-/etc/init.d/autosshtunnnel start dir-nyu-edu
+/etc/init.d/autosshtunnnel start your_config
 
 ####stop
-/etc/init.d/autosshtunnnel stop dir-nyu-edu
+/etc/init.d/autosshtunnnel stop your_config
 
 ####status
-/etc/init.d/autosshtunnnel status dir-nyu-edu
+/etc/init.d/autosshtunnnel status your_config
